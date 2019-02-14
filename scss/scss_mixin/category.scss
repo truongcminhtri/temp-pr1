@@ -1,0 +1,38 @@
+.section_product_item {
+	ul {
+		padding: 0;
+		width: 100%;
+		li {
+			list-style: none;
+			border-bottom: 1px solid $color-gray;
+			padding: 10px 0px;
+			&:hover {
+				color: $color-green;
+				cursor: pointer;
+			}
+			i {
+				width: 100%;
+				position: relative;
+				color: $color-gray;
+				p.modified {
+					color: $color-green;
+				}
+				p {
+					
+					display: inline;
+					margin: 0;
+					font-size: 15px;
+					width: 100%;
+					position: absolute;
+					&:hover {
+						color: $color-green;
+						cursor: pointer;
+					}
+				}
+				&::before {
+					padding-right: 5px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.img, .name {
+	padding: 0;
+	padding-bottom: 20px;
+	p {
+		a {
+			color: black;
+			font-size: 13px;
+			text-decoration: none;
+			&:hover {
+				color: $color-green;
+			}
+		}
+	}
+}

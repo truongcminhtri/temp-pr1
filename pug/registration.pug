@@ -1,0 +1,63 @@
+doctype html
+html
+  include ../pug/head
+  link(rel='stylesheet', type='text/css', href='../maincss/registration.css')
+    
+  body
+    .container-fluid
+      //- Header
+      include ../pug/header
+      //- //Header
+      include ../pug/pug_mixin/link_page
+      
+      +link_page('Đăng ký')
+
+      .section.row
+        .container
+          .row.content
+            .left.col-md-6
+              .title.row
+                p Thông tin cá nhân
+              .name.row
+                a Họ và tên
+                  i.fas.fa-star-of-life
+                input.textbox(type='textbox')
+              .email.row
+                a Địa chỉ email
+                  i.fas.fa-star-of-life
+                input.textbox(type='textbox')
+              .remember.row
+                label.container
+                  p Đăng ký nhận thông tin qua email
+                  input.checkbox(type='checkbox')
+                  span.checkmark
+
+              .title.row
+                p Thông tin tài khoản
+              .password.row
+                a Mật khẩu
+                  i.fas.fa-star-of-life
+                input.textbox(type='textbox')
+              .button_row.row
+                .return
+                  .return_btn Quay lại
+                .register
+                  .register_btn Đăng ký
+
+            .right.col-md-6
+              .phone.row
+                a Số ĐT
+                  i.fas.fa-star-of-life
+                input.textbox(type='textbox')
+              .website.row
+                a Website của bạn
+                  i.fas.fa-star-of-life
+                input.textbox(type='textbox')
+              .confirm_pd.row
+                a Nhập lại mật khẩu
+                  i.fas.fa-star-of-life
+                input.textbox(type='textbox')
+              
+
+      include ../pug/footer
+

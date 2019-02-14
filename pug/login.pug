@@ -1,0 +1,53 @@
+doctype html
+html
+	include ../pug/head
+	link(rel='stylesheet', type='text/css', href='../maincss/login.css')
+		
+	body
+		.container-fluid
+			//- Header
+			include ../pug/header
+			//- //Header
+			include ../pug/pug_mixin/link_page
+			
+			+link_page('Đăng nhập')
+
+			#section.section.row
+				.container
+					.row.content
+						.col-md-6.content__left
+							//- Title
+							.row.title-all
+								p Thông tin cá nhân
+							//- Email
+							.row.content__left__email
+								p Email
+								input.textbox.textbox--modified(type='textbox')
+							//- Password
+							.row.content__left__password
+								p Mật khẩu
+								input.textbox.textbox--modified(type='textbox')
+							//- Remember
+							.row.content__left__remember
+								.col-md-4.content__left__remember__check
+									label.container.label
+										p Ghi nhớ tài khoản
+										input.checkbox(type='checkbox')
+										span.checkmark
+								.col-md-4.content__left__remember__forgot
+									p Bạn quên mật khẩu ?
+							//- Payment Button
+							.row.content__left__button
+								.content__left__button__payment
+									.content__left__button__payment__text Thanh toán
+
+						.col-md-6.content__right
+							.row.title-all
+								p Bạn chưa có tài khoản
+								a Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn !Ngoài ra còn có rất nhiều chính sách và ưu đãi cho các thành viên citybike
+							.row.content__right__button
+								.content__right__button__payment
+									.content__right__button__payment__text Thanh toán
+
+			include ../pug/footer
+

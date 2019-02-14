@@ -1,0 +1,178 @@
+doctype html
+html
+  include ../pug/head
+  link(rel='stylesheet', type='text/css', href='../maincss/home.css')
+    
+  body
+    .container-fluid
+      //- Header
+      include ../pug/header
+      //- //Header
+      include ../pug/pug_mixin/item_product
+      include ../pug/pug_mixin/home/section2_item
+      include ../pug/pug_mixin/home/section4_content
+      include ../pug/pug_mixin/title
+
+      //- Banner
+      #banner.banner.row
+        .banner__img
+          img(src='../images/slide.png')
+          .banner__circle
+            a
+              i.fas.fa-circle
+            a
+              i.fas.fa-circle.banner__circle--green
+            a
+              i.fas.fa-circle
+      //- //Banner
+
+      //- Section 1
+      #section1.section1.row
+        .container
+          .row.section1__title
+            +title('Sản phẩm nổi bật')
+
+            //- Section 1 Gallery left
+          .row.section1__gallery
+            .section1__gallery__left.col-md-6
+              .section1__gallery__left--modified
+
+                //- Col top (1 product)
+                .row.section1__gallery__left__content-top
+                  +item_product('../images/sp4.png', 'Cây chân chim', '250.000 đ', '250.000 đ')
+                  .section_new New
+                  .section1__gallery__left__content-top--icon
+                    .section1_buy Mua Ngay
+                    .section1_search
+                      i.fas.fa-search
+
+                //- Col bot (2 product)
+                .row.section1__gallery__left__content-bot
+                  .section-item-product.col-md-6
+                    .section-item-product__left
+                      +item_product('../images/sp4.png', 'Cây chân chim', '250.000 đ', '250.000 đ')
+
+                  .section-item-product.col-md-6
+                    .section-item-product__right
+                      +item_product('../images/sp6.png', 'Cây dứa nhỏ', '375.000 đ', '250.000 đ')
+
+            //- Section 1 Gallery right
+            .section1__gallery__right.col-md-6
+              .section1__gallery__right--modified
+
+                //- Col top (2 product)
+                .row.section1__gallery__right__content-top
+                  .section-item-product.col-md-6
+                    .section-item-product__left
+                      +item_product('../images/sp5.png', 'Cây Dạ Lam', '500.000 đ', '250.000 đ')
+                      .section_discount -50%
+                  .section-item-product.col-md-6
+                    .section-item-product__right
+                      +item_product('../images/sp15.png', 'Cây Danh Dự', '850.000 đ', '250.000 đ')
+                      .section_new New
+
+                //- Col bot (1 product)
+                .row.section1__gallery__right__content-bot
+                  +item_product('../images/sp3.png', 'Cây đa búp đỏ', '1.000.000 đ', '250.000 đ')
+                  .section_discount -50%
+      //- //Section 1
+
+      //- Section 2
+      #section2.section2.row
+        .container
+          .row
+            //- Section 2 gallery left
+            .section2__gallery-left.col-md-3
+              .row.section2__gallery__title
+                +title('Sản phẩm mua nhiều')
+              .row.section2__gallery__product
+                +section2_item('../images/sp16.png', 'Cây chân chim', '250.000 đ')
+                +section2_item('../images/sp9.png', 'Cây Dạ Lam', '250.000 đ')
+                +section2_item('../images/sp15.png', 'Cây Danh Dự', '150.000 đ')
+                +section2_item('../images/sp13.png', 'Cây đa búp đỏ', '200.000 đ')
+                +section2_item('../images/sp5.png', 'Cây cọ ta', '300.000 đ')
+
+            //- Section 2 gallery right
+            .section2__gallery-right.col-md-9
+              .row.section2__gallery-right__title
+                +title('Sản phẩm khuyến mãi')
+                i.fas.fa-chevron-circle-left
+                i.fas.fa-chevron-circle-right
+              .row.section2__gallery-right__content-top
+                .col-md-4
+                  .section-item
+                    +item_product('../images/sp15.png', 'Cây Danh Dự', '475.000 đ', '250.000 đ')
+                    .section_discount -25%
+                .col-md-4
+                  .section-item
+                    +item_product('../images/sp13.png', 'Cây dứa nhỏ', '668.000 đ', '250.000 đ')
+                    .section_discount -10%
+                .col-md-4
+                  .section-item
+                    +item_product('../images/sp11.png', 'Cây cọ ta', '770.000 đ', '250.000 đ')
+              .row.section2__gallery-right__content-bot
+                .col-md-4
+                  .section-item
+                    +item_product('../images/sp2.png', 'Cây Dạ Lam', '555.000 đ', '250.000 đ')
+                .col-md-4
+                  .section-item
+                    +item_product('../images/sp8.png', 'Cây Danh Dự', '780.000 đ', '250.000 đ')
+                .col-md-4
+                  .section-item
+                    +item_product('../images/sp1.png', 'Cây Dạ Lam', '680.000 đ', '250.000 đ')
+      //- //Section 2
+
+      //- Section 3
+      #section3.section3.row
+        .container
+          .section3__banner.row
+            img(src='../images/st3.png')
+          .row.section3__title
+            +title('Sản phẩm mới')
+            i.fas.fa-chevron-circle-left
+            i.fas.fa-chevron-circle-right
+          .row.section3__content-top
+            .col-md-3
+              .section-item
+                +item_product('../images/sp15.png', 'Cây Danh Dự', '250.000 đ', '250.000 đ')
+            .col-md-3
+              .section-item
+                +item_product('../images/sp7.png', 'Cây xương rồng', '250.000 đ', '250.000 đ')
+            .col-md-3
+              .section-item
+                +item_product('../images/sp13.png', 'Cây Dạ Lam', '250.000 đ', '250.000 đ')
+            .col-md-3
+              .section-item
+                +item_product('../images/sp11.png', 'Cây dứa nhỏ', '250.000 đ', '250.000 đ')
+
+          .row.section3__content-bot
+            .col-md-3
+              .section-item
+                +item_product('../images/sp1.png', 'Cây Danh Dự', '680.000 đ', '250.000 đ')
+            .col-md-3
+              .section-item
+                +item_product('../images/sp5.png', 'Cây Dạ Lam', '880.000 đ', '250.000 đ')
+            .col-md-3
+              .section-item
+                +item_product('../images/sp2.png', 'Cây chân chim', '750.000 đ', '250.000 đ')
+            .col-md-3
+              .section-item
+                +item_product('../images/sp12.png', 'Cây đa búp đỏ', '150.000 đ', '250.000 đ')
+      //- //Section 3
+
+      //- Section 4
+      #section4.section4.row
+        .container
+          .section4__title.row
+            +title('Tin tức')
+          .section4__news.row
+            .section4__item.col-md-4
+              +section4_content('../images/ct1.png', 'Thứ 7, ngày 31, tháng 12, năm 2015', '15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê', 'Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn được ưa chuộng hiện nay nhé ! Kết hợp hàng rào, cửa sổ, chậu hoa,....')
+            .section4__item.col-md-4
+              +section4_content('../images/ct2.png', 'Thứ 7, ngày 31, tháng 12, năm 2015', '15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê', 'Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn được ưa chuộng hiện nay nhé ! Kết hợp hàng rào, cửa sổ, chậu hoa,....')
+            .section4__item.col-md-4
+              +section4_content('../images/ct3.png', 'Thứ 7, ngày 31, tháng 12, năm 2015', '15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê', 'Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn được ưa chuộng hiện nay nhé ! Kết hợp hàng rào, cửa sổ, chậu hoa,....')
+      //- //Section 4
+
+      //- Footer
+      include ../pug/footer

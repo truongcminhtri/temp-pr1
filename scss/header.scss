@@ -1,0 +1,204 @@
+@import "../variable/color";
+
+body {
+  background: #fbf9f9;
+  p {
+    font-size: 13px;
+    color: $color-gray;
+  }
+}
+
+// Header Top
+.header-top {
+  background: #202020;
+  height: 32px;
+  color: $color-gray-dark;
+  display: flex;
+
+  &__time {
+    height: 100%;
+    i {
+      padding-left: 15px;
+      font-size: $font-size;
+    }
+    a {
+      font-size: $font-size;
+      padding-left: 5px;
+    }
+  }
+
+  &__socials {
+    height: 100%;
+    a {
+      font-size: $font-size;
+      i {
+        font-size: $font-size;
+        width: 36px;
+        text-align: center;
+        &:hover {
+        color: $color-green;
+        cursor: pointer;
+        }
+      }
+    }
+    span {
+      color: $color-gray-dark;
+    }
+  }
+
+  &__login {
+    a {
+      margin-right: 5%;
+      margin-left: 5%;
+      color: $color-gray;
+      i {
+        font-size: $font-size;
+      }
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+}
+// //Header Top
+
+// Header
+.header {
+  background: url('../images/hdt.png');
+  &__logo {
+    display: flex;
+    &__name {
+      margin-left: 15px;
+      position: relative;
+      &__main {
+        font-family: 'VNF_Museo Slab';
+        font-size: 54px;
+        color: $color-green;
+      }
+      span {
+        font-family: 'Shelia VNF Regular';
+        font-size: 70px;
+        color: $color-green;
+      }
+      &__text {
+        font-size: 20px;
+          margin-top: -27px;
+          position: absolute;
+      }
+    }
+
+    &__img {
+      padding: 0px;
+    }
+  }
+  &__contact {
+    position: relative;
+    &__help{
+      margin-top: 30px;
+      text-align: center;
+      color: $color-gray-dark;
+    }
+    &__input {
+      padding: 10px;
+      border-radius: 50px;
+      width: 100%;
+      border: none;
+      &::placeholder {
+        color: $color-gray-dark;
+      }
+      a {
+        float: right;
+        i {
+          &::before {
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+    .search-modified {
+      position: absolute;
+        top: 56%;
+        left: 83%;
+        border-left: 1px solid $color-gray;
+        padding-left: 15px;
+        color: $color-gray;
+    }
+  }
+
+  &__card {
+    margin-top: 6%;
+    padding: 0;
+    a {
+      color: #202020;
+      &:hover {
+        color: $color-green;
+        text-decoration: none;
+      }
+    }
+    i {
+      &::before {
+        padding-right: 5px;
+      }
+    }
+  }
+}
+// //Header
+
+
+// Menu
+.menu {
+  background: $color-green;
+  text-transform: uppercase;
+  a {
+    color: #ffffff;
+  }
+
+  &__navbar {
+    width: 100%;
+    &__name {
+      padding-left: 15px;
+      li {
+        padding: 5px;
+        a {
+          padding: 14px 20px;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+      &__dropdown{
+        top: 95%;
+          left: 30%;
+        li {
+          &:hover {
+            color: $color-green;
+            background: $color-green;
+          }
+          a {
+            color: $color-green;
+            text-decoration: none;
+            padding: 14px 19px;
+            &:hover {
+              color: white;
+              background: none;
+            }
+          }
+        }
+      }
+      ul.modified {
+        left: 43%;
+      }
+    }
+  }
+
+  &__toggler {
+    width: 35px;
+    &__icon {
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;
+    }
+  }
+}
+// //Menu

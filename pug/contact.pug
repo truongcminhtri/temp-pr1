@@ -1,0 +1,57 @@
+doctype html
+html
+  include ../pug/head
+  link(rel='stylesheet', type='text/css', href='../maincss/contact.css')
+    
+  body
+    .container-fluid
+      //- Header
+      include ../pug/header
+      //- //Header
+        
+      //- Content
+      include ../pug/pug_mixin/link_page
+
+      +link_page('Liên hệ')
+
+      #map.map.row
+        iframe.map__link(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7155067424783!2d108.21780831463158!3d16.08024624341436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183be275f1cf%3A0xbc1ebccf64c39bbd!2zMTYgTMO9IFRoxrDhu51uZyBLaeG7h3QsIFRo4bqhY2ggVGhhbmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1548118776149', frameborder='0', style='border:0', allowfullscreen='')
+
+      #content.content.row
+        .container
+          .row
+            .col-md-6.content__left
+              .row.content__left__title
+                p Thông tin cá nhân
+              .row.content__left__name
+                a Họ và tên
+                  i.fas.fa-star-of-life :
+                input.textbox(type='textbox')
+              .row.content__left__email
+                a Địa chỉ email
+                  i.fas.fa-star-of-life :
+                input.textbox(type='textbox')
+              .row.content__left__phone
+                a Số ĐT
+                  i.fas.fa-star-of-life :
+                input.textbox(type='textbox')
+              .row.content__left__comment
+                a Bình luận
+                  i.fas.fa-star-of-life :
+                input.textbox.content__left__comment_txt(type='textbox')
+              .row.content__left_button
+                .content__left_button__send Gửi
+
+            .col-md-6.content__right
+              .row.content__right__title
+                p.content__right__title__main Green
+                  span Shop
+                p.content__right__title__text Món quà từ thiên nhiên
+              .row.content__right__content
+                p DKT được thành lập với niềm đam mê và khát vọng thành công trong lĩnh vực Thương mại điện tử.Chúng tôi đã và đang khẳng định được vị trí hàng đầu bằng những sản phẩm
+              .row.content__right__icon
+                i.fas.fa-mobile-alt.content__right__icon--modified
+                  a Điện thoại : (84-4) 66.558.868
+              .row.content__right__icon
+                i.far.fa-envelope Email: info@dkt.com.vn
+      include ../pug/footer

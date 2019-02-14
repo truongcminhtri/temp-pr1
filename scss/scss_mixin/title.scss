@@ -1,0 +1,12 @@
+.section_title_all {
+	width: 100%;
+	margin-bottom: 39px;
+	font-family: 'RobotoSlab Bold';
+	padding-top: 56px;
+	color: $color-green;
+	span {
+		border-bottom: 2px solid $color-green;
+		padding-bottom: 17px;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,12 @@
+mixin item_product(href,name,price_main,price_second)
+	img(src=href)
+	.section_item_all= name
+		br
+		i.fas.fa-star
+		i.fas.fa-star
+		i.fas.fa-star
+		i.fas.fa-star
+		i.fas.fa-star-half
+		br
+		a.mainprice= price_main
+		a.secondprice= price_second

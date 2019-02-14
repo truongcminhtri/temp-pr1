@@ -1,0 +1,44 @@
+@import "../variable/color";
+@import "../scss/header";
+@import "../scss/footer";
+@import "../scss/scss_mixin/link_page";
+@import "../scss/scss_mixin/title";
+@import "../scss/scss_mixin/category";
+@import "../scss/scss_mixin/news_comment/blogs_tag";
+@import "../scss/scss_mixin/news_comment/product_images";
+@import "../scss/scss_mixin/pagination";
+
+.content {
+	.container {
+		padding-left: 3%;
+	}
+	
+	.content__right {
+		padding-left: 45px;
+		margin-top: 40px;
+		img {
+			width: 100%;
+		}
+		.section_gallery_title {
+			display: block;
+			.section_gallery_name {
+				p {
+					color: black;
+					font-size: 18px;
+				}
+			}
+			.section_gallery_time {
+				i {
+					padding-right: 15px;
+					&::before {
+						color: $color-green;
+						padding-right: 10px;
+					}
+				}
+			}
+		}
+		.section_gallery_content {
+			margin-top: 32px;
+		}
+	}
+}

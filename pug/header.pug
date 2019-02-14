@@ -1,0 +1,94 @@
+//- Header top
+#header-top.header-top.row
+  .container
+    .row
+      .col-md-5.header-top__time
+        i.far.fa-clock
+        a.navbar-brand Open time: 8:00 - 18:00 Monday - Sunday
+      .col-md-4.header-top__socials
+        a
+          i.fab.fa-facebook-f(title='Facebook')
+        span |
+        a
+          i.fab.fa-twitter(title='Twitter')
+        span |
+        a
+          i.fab.fa-tumblr(title='Pinterest')
+        span |
+        a
+          i.i.fab.fa-vimeo-v(title='Vimeo')
+        span |
+      .col-md-3.header-top__login
+        a(href='../html/login.html')
+          i.fas.fa-user 
+            span Đăng nhập
+        a(href='../html/registration.html')
+          i.fas.fa-user-plus 
+            span Đăng kí
+//- //Header Top
+
+//- Header
+#header.header.row
+  .container
+    .row
+      .col-md-6.header__logo
+        .header__logo__name
+          p.header__logo__name__main Green
+            span Shop
+          p.header__logo__name__text Món quà từ thiên nhiên
+        .header__logo__img
+          img(src='../images/hdt1.png')
+      .col-md-4
+        .col-md-12.header__contact
+          p.header__contact__help Hỗ trợ: (04) 6674 2332 - (04) 3786 8904
+          input.textbox.header__contact__input(type='textbox', placeholder=' Tìm kiếm...')
+          a.search-modified(href='../html/cart.html')
+            i.fas.fa-search
+      .col-md-2.header__card
+        a(href='../html/cart.html')
+          i.fas.fa-shopping-basket
+          | 0 Sản phẩm
+//- //Header
+
+//- Menu
+#menu.menu.row
+  .container
+    nav.navbar.navbar-expand-md.navbar-dark.menu__navbar
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsibleNavbar')
+        span.navbar-toggler-icon
+      #collapsibleNavbar.collapse.navbar-collapse
+        .menu__toggler
+          .menu__toggler__icon
+          .menu__toggler__icon
+          .menu__toggler__icon
+        ul.navbar-nav.menu__navbar__name
+          li
+            a.active(href='../html/home.html') Trang Chủ
+          li
+            a(href='../html/grid.html') Giới Thiệu
+          li
+            a.dropdown-toggle(data-toggle='dropdown', href='#')
+              | Sản Phẩm
+              span.caret
+            ul.dropdown-menu.menu__navbar__name__dropdown
+              li
+                a(href='../html/list.html') Sản Phẩm 1
+              li
+                a(href='../html/list.html') Sản Phẩm 2
+              li
+                a(href='#') Sản Phẩm 3
+          li
+            a.dropdown-toggle(data-toggle='dropdown', href='#')
+              | Sản Phẩm Mới
+              span.caret
+            ul.dropdown-menu.menu__navbar__name__dropdown.modified
+              li
+                a(href='../html/detail.html') Sản Phẩm Mới 1
+              li
+                a(href='../html/detail.html') Sản Phẩm Mới 2
+              li
+                a(href='#') Sản Phẩm Mới 3
+          li
+            a(href='../html/news.html') Tin Tức
+          li
+            a(href='../html/contact.html') Liên Hệ

@@ -1,0 +1,178 @@
+@import "../variable/color";
+
+// Footer top content
+.footer {
+  background: #313131;
+  margin-top: 40px;
+  p {
+    font-size: 14px;
+    color: $color-gray-dark;
+  }
+  i {
+    color: $color-gray-dark;
+  }
+  &__content {
+    padding-top: 30px;
+    p.name {
+      text-transform: uppercase;
+    }
+
+    &__socials {
+      &__icon {
+        a {
+          color: $color-gray-dark;
+          i {
+            padding-right: 25px;
+            &:hover {
+              color: $color-green;
+            }
+          }
+        }
+      }
+    }
+
+    &__email {
+      p {
+        padding-left: 3px;
+      }
+    }
+
+    &__button {
+      &__textbox {
+        width: 90%;
+        float: left;
+        padding: 8px;
+      }
+      i {
+        background: $color-green;
+        padding: 14px;
+        float: left;
+        color: white;
+      }
+    }
+  }
+
+  hr {
+    background: $color-gray-dark;
+  }
+
+    // About us
+  &__about {
+    &__title {
+      &__name {
+        margin: 0;
+        position: relative;
+        p.main {
+          font-family: 'VNF_Museo Slab';
+          font-size: 54px;
+          color: $color-green;
+        }
+        span {
+          font-family: 'Shelia VNF Regular';
+          font-size: 70px;
+          color: $color-green;
+        }
+        p.text {
+          font-size: 20px;
+          margin-top: 0;
+          position: absolute;
+        }
+      }
+
+      p {
+        line-height: 28px;
+        margin-top: 4%;
+      }
+      i {
+        line-height: 34px;
+        a {
+            font-family: "Times New Roman";
+            font-weight: initial;
+        }
+      }
+      i::before {
+          padding-right: 10px;
+          color: $color-green;
+      }
+    }
+
+    &__customer {
+      display: flex;
+      justify-content: space-between;
+      p {
+        color: $color-green;
+        text-transform: uppercase;
+      }
+      ul {
+        padding: 0;
+        line-height: 41px;
+        font-size: $font-size;
+        li {
+          list-style: none;
+          &:hover {
+            color: $color-green;
+            cursor: pointer;
+          }
+          i {
+            &:hover {
+              color: $color-green;
+              cursor: pointer;
+            }
+            &::before {
+              padding-right: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Contact
+  &__contact {
+    &__left {
+      padding: 10px 0px;
+      ul {
+        padding: 0;
+        li {
+          display: inline;
+          padding-right: 20px;
+          i {
+            color: $color-gray-dark;
+            font-size: $font-size;
+            font-style: normal;
+            &:hover {
+              color: $color-green;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    &__right {
+      float: right;
+      ul {
+        padding: 10px 10px;
+        li {
+          display: inline;
+          i {
+              padding-right: 10px;
+              font-size: 18px;
+              color: $color-gray-dark;
+              &:hover {
+                color: $color-green;
+                cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Design
+  .design {
+    background: #434343;
+    color: $color-gray-dark;
+    justify-content: center;
+  }
+}
+// //Footer

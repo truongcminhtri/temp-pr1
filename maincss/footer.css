@@ -1,0 +1,136 @@
+p {
+  font-size: 14px;
+}
+
+#footer {
+  background: #313131;
+  margin-top: 40px;
+}
+#footer .socials {
+  padding-top: 30px;
+}
+#footer .socials .socials_email, #footer .socials .socials_name, #footer .socials .socials_icon a i {
+  color: #898989;
+  text-transform: uppercase;
+}
+#footer .socials .socials_icon i {
+  padding-right: 25px;
+}
+#footer .socials .socials_icon i:hover {
+  color: #3fb871;
+}
+#footer .socials .socials_icon .socials_name {
+  font-size: 14px;
+}
+#footer .socials .socials_email p {
+  padding-left: 3px;
+}
+#footer .socials .socials_button .textbox {
+  width: 90%;
+  float: right;
+  padding: 8px;
+}
+#footer .socials .socials_button i {
+  background: #3fb871;
+  padding: 14px;
+  float: right;
+}
+#footer hr {
+  background: #898989;
+}
+#footer .about_us {
+  color: #898989;
+}
+#footer .about_us .title_contact p {
+  line-height: 28px;
+  color: #898989;
+}
+#footer .about_us .title_contact i {
+  line-height: 34px;
+}
+#footer .about_us .title_contact i a {
+  font-family: "Times New Roman";
+  font-weight: initial;
+}
+#footer .about_us .title_contact i::before {
+  padding-right: 10px;
+  color: #3fb871;
+}
+#footer .about_us .customer1, #footer .about_us .customer2, #footer .about_us .customer3, #footer .about_us .customer4 {
+  margin: 30px 0px;
+  padding: 0;
+}
+#footer .about_us .customer1 p, #footer .about_us .customer2 p, #footer .about_us .customer3 p, #footer .about_us .customer4 p {
+  color: #3fb871;
+  text-transform: uppercase;
+}
+#footer .about_us .customer1 ul, #footer .about_us .customer2 ul, #footer .about_us .customer3 ul, #footer .about_us .customer4 ul {
+  padding: 0;
+  line-height: 41px;
+  font-size: 13px;
+}
+#footer .about_us .customer1 ul li, #footer .about_us .customer2 ul li, #footer .about_us .customer3 ul li, #footer .about_us .customer4 ul li {
+  list-style: none;
+}
+#footer .about_us .customer1 ul li:hover, #footer .about_us .customer2 ul li:hover, #footer .about_us .customer3 ul li:hover, #footer .about_us .customer4 ul li:hover {
+  color: #3fb871;
+  cursor: pointer;
+}
+#footer .about_us .customer1 ul li i::before, #footer .about_us .customer2 ul li i::before, #footer .about_us .customer3 ul li i::before, #footer .about_us .customer4 ul li i::before {
+  padding-right: 4px;
+}
+#footer .about_us .customer1 {
+  padding-left: 17px;
+}
+#footer .about_us .customer2 {
+  padding-left: 30px;
+}
+#footer .about_us .customer3 {
+  padding-left: 17px;
+}
+#footer .about_us .customer4 {
+  padding-left: 36px;
+}
+#footer .contact .contact_left {
+  padding: 10px 0px;
+}
+#footer .contact .contact_left ul {
+  padding: 0;
+}
+#footer .contact .contact_left ul li {
+  display: inline;
+  padding-right: 20px;
+}
+#footer .contact .contact_left ul li a {
+  color: #898989;
+  font-size: 13px;
+}
+#footer .contact .contact_left ul li a:hover {
+  color: #3fb871;
+  cursor: pointer;
+}
+#footer .contact .contact_right {
+  float: right;
+}
+#footer .contact .contact_right ul {
+  padding: 10px 10px;
+}
+#footer .contact .contact_right ul li {
+  display: inline;
+}
+#footer .contact .contact_right ul li a {
+  padding-right: 10px;
+  font-size: 18px;
+  color: #898989;
+}
+#footer .contact .contact_right ul li a:hover {
+  color: #3fb871;
+  cursor: pointer;
+}
+#footer .design {
+  background: #434343;
+  color: #898989;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

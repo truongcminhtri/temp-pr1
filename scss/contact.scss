@@ -1,0 +1,125 @@
+@import "../variable/color";
+@import "../scss/header";
+@import "../scss/footer";
+@import "../scss/scss_mixin/link_page";
+
+.map {
+  height: 490px;
+  .container-fluid {
+    padding: 0;
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content {
+  margin-top: 65px;
+  margin-bottom: 120px;
+  .row {
+    padding-left: 15px;
+  }
+  &__left {
+    padding-right: 44px;
+    a {
+      font-size: 13px;
+      padding-bottom: 8px;
+      color: $color-gray-dark;
+    }
+    i {
+      font-size: 8px;
+      color: #ee2b33;
+      position: relative;
+        top: -20%;
+        left: 5%;
+        &::before {
+          padding-right: 5px;
+        }
+    }
+    input {
+      margin-bottom: 30px;
+      width: 100%;
+      padding: 9px;
+    }
+    &__title {
+      p {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $color-green;
+        font-weight: bold;
+        padding-bottom: 19px;
+      }
+    }
+    &__comment {
+      input {
+        padding-bottom: 160px;
+      }
+    }
+    &_button {
+      float: right;
+      &__send {
+          border-radius: 50px;
+          padding: 10px 62px;
+          color: $color-green;
+          text-transform: uppercase;
+          margin-top: 28px;
+          margin-bottom: 25px;
+          border: 1px solid $color-green;
+          &:hover {
+          color: white;
+          background: $color-green;
+            border: 1px solid $color-green;
+            cursor: pointer;
+          }
+      }
+    }
+  }
+
+  &__right {
+    &__title {
+      &__main {
+        font-family: 'VNF_Museo Slab';
+        font-size: 54px;
+        color: $color-green;
+        width: 100%;
+      }
+      span {
+        font-family: 'Shelia VNF Regular';
+        font-size: 70px;
+        color: $color-green;
+      }
+      &__text {
+        font-size: 20px;
+          margin-top: -27px;
+      }
+    }
+    &__content {
+      color: $color-gray-dark;
+      p {
+        font-size: 13px;
+        padding-bottom: 40px;
+          padding-top: 35px;
+      }
+    }
+    &__icon {
+      margin-left: 0;
+      i {
+        margin-left: -10px;
+        font-size: 13px;
+        color: $color-green;
+        &::before {
+          padding-right: 5px;
+        }
+        a {
+          color: $color-green;
+          font-weight: initial;
+          padding-left: 5px;
+        }
+      }
+      &--modified {
+        padding-bottom: 18px;
+      }
+    }
+  }
+}

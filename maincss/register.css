@@ -1,0 +1,111 @@
+body {
+  background: #f1eeeb;
+}
+
+.main {
+  top: 70%;
+  position: relative;
+  width: 100%;
+}
+.main .img {
+  padding: 0;
+}
+.main .img img.shadow_img {
+  position: absolute;
+  top: 64%;
+  left: 4%;
+  opacity: 0.5;
+}
+.main .content {
+  padding: 0;
+}
+.main .content .name {
+  font-size: 37px;
+}
+.main .content .name p {
+  margin: 0;
+  font-size: "VNF Shelia";
+}
+.main .content .email {
+  font-size: 23px;
+  color: #3fb871;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.main .content .email p {
+  margin-bottom: 25px;
+}
+.main .content .textbox_row {
+  width: 100%;
+}
+.main .content .textbox_row .textbox {
+  width: 90%;
+}
+.main .content .textbox_row i {
+  background: #3fb871;
+  padding: 15px;
+}
+.main .content .content_row {
+  font-size: 14px;
+  width: 100%;
+}
+
+.checkbox_row {
+  height: 20px;
+}
+.checkbox_row .container {
+  float: right;
+}
+.checkbox_row input.checkbox {
+  float: right;
+}
+.checkbox_row p {
+  font-size: 14px;
+}
+.checkbox_row .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox_row .container input {
+  width: 0;
+}
+.checkbox_row .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+}
+.checkbox_row .container input:checked ~ .checkmark {
+  background-color: green;
+}
+.checkbox_row .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox_row .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox_row .container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=register.css.map */

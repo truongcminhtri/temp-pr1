@@ -1,0 +1,26 @@
+.gallery_pagination {
+	float: right;
+	padding: 0;
+	margin: 50px -5px 128px 0px;
+	.pagination {
+		display: inline-block;
+		a {
+			color: $color-gray;
+			float: left;
+			padding: 8px 16px;
+			text-decoration: none;
+			transition: background-color .3s;
+			border: 1px solid #ddd;
+			margin: 0 4px;
+			&.active {
+				background-color: $color-green;
+				color: black;
+				border: 1px solid #4CAF50;
+			}
+			&:hover:not(.active) {
+				background-color: $color-green;
+				color: black;
+			}
+		}
+	}
+}

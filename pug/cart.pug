@@ -1,0 +1,91 @@
+doctype html
+html
+    include ../pug/head
+    link(rel='stylesheet', type='text/css', href='../maincss/cart.css')
+        
+    body
+        .container-fluid
+          //- Header
+          include ../pug/header
+          //- //Header
+              
+          //- Content
+          include ../pug/pug_mixin/link_page
+
+          +link_page('Giỏ hàng')
+
+          #title.title.row
+              .container
+                  h4 GIỎ HÀNG
+
+          #content.content.row
+              .container.table-responsive
+                  table.table.table-bordered
+                      thead
+                          tr
+                              th Hình ảnh
+                              th Tên sản phẩm
+                              th Đơn giá
+                              th Số lượng
+                              th Thành tiền
+                              th Xóa
+                      tbody
+                          tr
+                              td.img
+                                  img(src='../images/sp1.png')
+                              td.name Cây văn phòng
+                              td 270.000 đ
+                              td.amount 
+                                  a 1
+                              td 270.000 đ
+                              td.trash
+                                  i.fas.fa-trash-alt
+                          tr
+                              td.img
+                                  img(src='../images/sp1.png')
+                              td.name Cây văn phòng
+                              td 270.000 đ
+                              td.amount 
+                                  a 1
+                              td 270.000 đ
+                              td.trash
+                                  i.fas.fa-trash-alt
+                          tr
+                              td.img
+                                  img(src='../images/sp1.png')
+                              td.name Cây văn phòng
+                              td 270.000 đ
+                              td.amount 
+                                  a 1
+                              td 270.000 đ
+                              td.trash
+                                  i.fas.fa-trash-alt
+
+          #buy.buy.row
+              .buy__button
+                  .buy__button__cancel Hủy đơn hàng
+                  .buy__button__continue Tiếp tục mua
+
+          #total.total.row
+              .container
+                  .row
+                      .col-md-4
+                      .col-md-8
+                          table.table.table-bordered.total__table
+                              tbody
+                                  tr
+                                      td Tổng tiền (chưa thuế)
+                                      td 270.000 đ
+                                  tr
+                                      td Thuế (vat 10%)
+                                      td 27.000 đ
+                                  tr
+                                      td.name Tổng phải thanh toán
+                                      td.price 297.000 đ
+          #payment.payment.row
+              .payment__button
+                  .payment__button__pay Thanh toán
+          //- //Content
+          
+          //- Footer
+          include ../pug/footer

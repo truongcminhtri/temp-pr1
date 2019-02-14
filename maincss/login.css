@@ -1,0 +1,482 @@
+@charset "UTF-8";
+body {
+  background: #fbf9f9;
+}
+body p {
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+.header-top {
+  background: #202020;
+  height: 32px;
+  color: #898989;
+  display: flex;
+}
+.header-top__time {
+  height: 100%;
+}
+.header-top__time i {
+  padding-left: 15px;
+  font-size: 13px;
+}
+.header-top__time a {
+  font-size: 13px;
+  padding-left: 5px;
+}
+.header-top__socials {
+  height: 100%;
+}
+.header-top__socials a {
+  font-size: 13px;
+}
+.header-top__socials a i {
+  font-size: 13px;
+  width: 36px;
+  text-align: center;
+}
+.header-top__socials a i:hover {
+  color: #3fb871;
+  cursor: pointer;
+}
+.header-top__socials span {
+  color: #898989;
+}
+.header-top__login a {
+  margin-right: 5%;
+  margin-left: 5%;
+  color: #aaaaaa;
+}
+.header-top__login a i {
+  font-size: 13px;
+}
+.header-top__login a:hover {
+  color: #3fb871;
+}
+
+.header {
+  background: url("../images/hdt.png");
+}
+.header__logo {
+  display: flex;
+}
+.header__logo__name {
+  margin-left: 15px;
+  position: relative;
+}
+.header__logo__name__main {
+  font-family: "VNF_Museo Slab";
+  font-size: 54px;
+  color: #3fb871;
+}
+.header__logo__name span {
+  font-family: "Shelia VNF Regular";
+  font-size: 70px;
+  color: #3fb871;
+}
+.header__logo__name__text {
+  font-size: 20px;
+  margin-top: -27px;
+  position: absolute;
+}
+.header__logo__img {
+  padding: 0px;
+}
+.header__contact {
+  position: relative;
+}
+.header__contact__help {
+  margin-top: 30px;
+  text-align: center;
+  color: #898989;
+}
+.header__contact__input {
+  padding: 10px;
+  border-radius: 50px;
+  width: 100%;
+  border: none;
+}
+.header__contact__input::placeholder {
+  color: #898989;
+}
+.header__contact__input a {
+  float: right;
+}
+.header__contact__input a i::before {
+  padding-left: 15px;
+}
+.header__contact .search-modified {
+  position: absolute;
+  top: 56%;
+  left: 83%;
+  border-left: 1px solid #aaaaaa;
+  padding-left: 15px;
+  color: #aaaaaa;
+}
+.header__card {
+  margin-top: 6%;
+  padding: 0;
+}
+.header__card a {
+  color: #202020;
+}
+.header__card a:hover {
+  color: #3fb871;
+  text-decoration: none;
+}
+.header__card i::before {
+  padding-right: 5px;
+}
+
+.menu {
+  background: #3fb871;
+  text-transform: uppercase;
+}
+.menu a {
+  color: #ffffff;
+}
+.menu__navbar {
+  width: 100%;
+}
+.menu__navbar__name {
+  padding-left: 15px;
+}
+.menu__navbar__name li {
+  padding: 5px;
+}
+.menu__navbar__name li a {
+  padding: 14px 20px;
+}
+.menu__navbar__name li a:hover {
+  color: white;
+}
+.menu__navbar__name__dropdown {
+  top: 95%;
+  left: 30%;
+}
+.menu__navbar__name__dropdown li:hover {
+  color: #3fb871;
+  background: #3fb871;
+}
+.menu__navbar__name__dropdown li a {
+  color: #3fb871;
+  text-decoration: none;
+  padding: 14px 19px;
+}
+.menu__navbar__name__dropdown li a:hover {
+  color: white;
+  background: none;
+}
+.menu__navbar__name ul.modified {
+  left: 43%;
+}
+.menu__toggler {
+  width: 35px;
+}
+.menu__toggler__icon {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.footer {
+  background: #313131;
+  margin-top: 40px;
+}
+.footer p {
+  font-size: 14px;
+  color: #898989;
+}
+.footer i {
+  color: #898989;
+}
+.footer__content {
+  padding-top: 30px;
+}
+.footer__content p.name {
+  text-transform: uppercase;
+}
+.footer__content__socials__icon a {
+  color: #898989;
+}
+.footer__content__socials__icon a i {
+  padding-right: 25px;
+}
+.footer__content__socials__icon a i:hover {
+  color: #3fb871;
+}
+.footer__content__email p {
+  padding-left: 3px;
+}
+.footer__content__button__textbox {
+  width: 90%;
+  float: left;
+  padding: 8px;
+}
+.footer__content__button i {
+  background: #3fb871;
+  padding: 14px;
+  float: left;
+  color: white;
+}
+.footer hr {
+  background: #898989;
+}
+.footer__about__title__name {
+  margin: 0;
+  position: relative;
+}
+.footer__about__title__name p.main {
+  font-family: "VNF_Museo Slab";
+  font-size: 54px;
+  color: #3fb871;
+}
+.footer__about__title__name span {
+  font-family: "Shelia VNF Regular";
+  font-size: 70px;
+  color: #3fb871;
+}
+.footer__about__title__name p.text {
+  font-size: 20px;
+  margin-top: 0;
+  position: absolute;
+}
+.footer__about__title p {
+  line-height: 28px;
+  margin-top: 4%;
+}
+.footer__about__title i {
+  line-height: 34px;
+}
+.footer__about__title i a {
+  font-family: "Times New Roman";
+  font-weight: initial;
+}
+.footer__about__title i::before {
+  padding-right: 10px;
+  color: #3fb871;
+}
+.footer__about__customer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__about__customer p {
+  color: #3fb871;
+  text-transform: uppercase;
+}
+.footer__about__customer ul {
+  padding: 0;
+  line-height: 41px;
+  font-size: 13px;
+}
+.footer__about__customer ul li {
+  list-style: none;
+}
+.footer__about__customer ul li:hover {
+  color: #3fb871;
+  cursor: pointer;
+}
+.footer__about__customer ul li i:hover {
+  color: #3fb871;
+  cursor: pointer;
+}
+.footer__about__customer ul li i::before {
+  padding-right: 4px;
+}
+.footer__contact__left {
+  padding: 10px 0px;
+}
+.footer__contact__left ul {
+  padding: 0;
+}
+.footer__contact__left ul li {
+  display: inline;
+  padding-right: 20px;
+}
+.footer__contact__left ul li i {
+  color: #898989;
+  font-size: 13px;
+  font-style: normal;
+}
+.footer__contact__left ul li i:hover {
+  color: #3fb871;
+  cursor: pointer;
+}
+.footer__contact__right {
+  float: right;
+}
+.footer__contact__right ul {
+  padding: 10px 10px;
+}
+.footer__contact__right ul li {
+  display: inline;
+}
+.footer__contact__right ul li i {
+  padding-right: 10px;
+  font-size: 18px;
+  color: #898989;
+}
+.footer__contact__right ul li i:hover {
+  color: #3fb871;
+  cursor: pointer;
+}
+.footer .design {
+  background: #434343;
+  color: #898989;
+  justify-content: center;
+}
+
+.link-page__container {
+  padding-left: 3%;
+}
+.link-page__container__name {
+  margin-top: 20px;
+  font-size: 13px;
+}
+.link-page__container__name span {
+  color: #3fb871;
+}
+.link-page__container__name span::before {
+  content: "/ ";
+  padding-left: 3px;
+}
+
+.content {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+.content .title-all p {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #3fb871;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+.content__left {
+  padding-right: 45px;
+}
+.content__left__email {
+  margin-bottom: 45px;
+}
+.content__left .textbox--modified {
+  width: 100%;
+  padding: 9px;
+}
+.content__left__password {
+  margin-bottom: 63px;
+}
+.content__left__remember {
+  height: 20px;
+}
+.content__left__remember__check {
+  padding: 0;
+}
+.content__left__remember__check p {
+  color: black;
+}
+.content__left__remember__check .label {
+  float: right;
+}
+.content__left__remember__check input.checkbox {
+  float: right;
+}
+.content__left__remember__check p {
+  font-size: 14px;
+  color: black;
+}
+.content__left__remember__check .label {
+  display: block;
+  position: relative;
+  padding-left: 17px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.content__left__remember__check .label input {
+  width: 0;
+}
+.content__left__remember__check .checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border: 1px solid #7d7d7d;
+}
+.content__left__remember__check .label input:checked ~ .checkmark {
+  background-color: green;
+}
+.content__left__remember__check .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.content__left__remember__check .label input:checked ~ .checkmark:after {
+  display: block;
+}
+.content__left__remember__check .label .checkmark:after {
+  left: 3px;
+  top: -1px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.content__left__remember__forgot p {
+  color: #aaaaaa;
+  text-decoration: underline;
+  font-style: italic;
+}
+.content__left__button {
+  margin-top: 45px;
+  margin-bottom: 110px;
+}
+.content__left__button__payment {
+  position: relative;
+}
+.content__left__button__payment__text {
+  border-radius: 50px;
+  padding: 10px 33px;
+  color: #3fb871;
+  border: 1px solid #3fb871;
+}
+.content__left__button__payment__text:hover {
+  background: #3fb871;
+  color: white;
+  border: 1px solid #3fb871;
+  cursor: pointer;
+}
+.content__right .title-all p {
+  padding-bottom: 23px;
+}
+.content__right .title-all a {
+  font-size: 15px;
+  color: #aaaaaa;
+}
+.content__right__button {
+  margin-top: 35px;
+}
+.content__right__button__payment {
+  position: relative;
+}
+.content__right__button__payment__text {
+  border-radius: 50px;
+  padding: 10px 33px;
+  color: #3fb871;
+  border: 1px solid #3fb871;
+}
+.content__right__button__payment__text:hover {
+  background: #3fb871;
+  color: white;
+  border: 1px solid #3fb871;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=login.css.map */

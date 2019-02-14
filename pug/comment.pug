@@ -1,0 +1,128 @@
+doctype html
+html
+  include ../pug/head
+  link(rel='stylesheet', type='text/css', href='../maincss/comment.css')
+    
+  body
+    .container-fluid
+      //- Header
+      include ../pug/header
+      //- //Header
+        
+      //- Content
+      include ../pug/pug_mixin/link_page
+      include ../pug/pug_mixin/title
+      include ../pug/pug_mixin/category
+      include ../pug/pug_mixin/news_comment/product_images
+      include ../pug/pug_mixin/news_comment/blogs_tag
+      include ../pug/pug_mixin/news_comment/comment_infor
+
+      +link_page('Cây dạ lam')
+      
+      #content.content.row
+        .container
+          .row
+            //- Content left
+            .col-md-3.content__left
+              //- Title
+              .row.content__left__title
+                +title('Danh mục sản phẩm')
+
+              +category()
+
+              .row.content__left__title
+                +title('Tin tức nổi bật')
+
+              .row.content__left__product
+                +product_images('../images/new1.png', 'Hướng dẫn lựa chọn và bố trí cây xanh trong phòng khách')
+                +product_images('../images/new2.png', 'Những sai lầm nên tránh khi bố trí cây xanh trong nhà')
+                +product_images('../images/new3.png', '7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng')
+                +product_images('../images/new4.png', 'Hướng dẫn lựa chọn cây cảnh trang trí trong văn phòng')
+                +product_images('../images/new5.png', '4 loại cây cảnh thích hợp bày trí ở khu vực đại sảnh')
+
+              .row.content__left__title
+                +title('Blog tag')
+              +blogs_tag()
+
+            .col-md-9.content__right
+              .content__right__title.row
+                .content__right__title__name
+                  p Cách bố trí hoa chậu trước cửa ấn tượng ngay lần đầu tiên
+                .content__right__title__time
+                  p
+                    i.far.fa-calendar-minus 20/12/2015
+                    i.far.fa-clock 11:20:00 AM
+                    i.far.fa-comment-dots 0 Bình luận
+
+              .content__right__img.row
+                img(src='../images/new6.png')
+
+              .content__right__content.row
+                p Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa nhà luôn được đầu tư và trang trí khá bắt mắt. Cũng có thể nói đây là bộ mặt của ngôi nhà, là ấn tượng đầu tiên khzi một vị khách ghé chơi nhà bạn đấy. Hãy cùng Sài Gòn Hoa tham khảo một vài cách bố trí chậu cây hoa cảnh ngay trước cửa nhà sao cho ấn tượng nhất nhé!
+
+                p 7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng, Những mẫu cây để bàn đang được giới văn phòng ưa chuộng, cây cảnh văn phòng để bàn thông dụng, những cây cảnh được giới văn phòng ưa chuộng
+
+                p Cây bạch mã hoàng tử để bàn có chiều cao trung bình từ 20 – 40cm, dáng đẹp, lá cây màu xanh đậm với những đường vân vàng nhạt mọc đối xứng nhau trông rất sang trọng và lịch lãm.
+
+                p Loại cây này ưa bóng, chịu được nhiệt độ thấp lại có khả năng tạo ẩm và thanh lọc không khí nên rất thích hợp đặt trong văn phòng làm việc có máy lạnh.
+
+                p Cây bạch mã hoàng tử thường được chọn để đặt trên bàn làm việc của sếp, bàn nhỏ ở phòng tiếp khách hoặc bàn làm việc của các đấng mày râu.
+
+                p 2. Cây trầu bà đế vương
+
+                p Cây trầu bà đế vương tượng trưng cho quyền uy, phong thái dẫn đầu nên thích hợp để đặt trên bàn làm việc của người lãnh đạo, quản lý doanh nghiệp.
+
+                p Lá cây trầu bá đế vương khá to, dày, hơi bóng, đường gân rõ ràng, có hình dạng như hình trái tim, xòe rộng hướng lên trên trông rất bệ nghễ và cao sang.
+
+                p Tùy thuộc vào sở thích cá nhân và thiết kế chủ đạo của không gian phòng làm việc, bạn có thể chọn loại trầu bà đế vương xanh, trầu bá đế vương vàng hoặc trầu bà đế vương đỏ.
+
+              .content__right__img.row
+                img(src='../images/new7.png')
+
+              .content__right__content.row
+                p Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa nhà luôn được đầu tư và trang trí khá bắt mắt. Cũng có thể nói đây là bộ mặt của ngôi nhà, là ấn tượng đầu tiên khzi một vị khách ghé chơi nhà bạn đấy. Hãy cùng Sài Gòn Hoa tham khảo một vài cách bố trí chậu cây hoa cảnh ngay trước cửa nhà sao cho ấn tượng nhất nhé!
+
+                p 7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng, Những mẫu cây để bàn đang được giới văn phòng ưa chuộng, cây cảnh văn phòng để bàn thông dụng, những cây cảnh được giới văn phòng ưa chuộng
+
+      #comment.comment.row
+        .container
+          .row
+            .col-md-3
+            .col-md-9.comment-right
+              .row.comment__name
+                p Bình luận (3)
+              
+              .row.comment__content
+                +comment_infor('../images/comment.png', 'Nguyễn Văn An', 'This is Photoshops version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.')
+              hr
+
+              .row.comment__reply
+                .col-md-1
+                .col-md-11.comment__reply-modified
+                  .row
+                    .comment__reply__img.col-md-2
+                      img(src='../images/comment.png')
+                    .comment__reply__content.col-md-10
+                      p.comment__reply__content__name Nguyễn Văn Bình
+                        a Trả lời
+                      p.comment__reply__content__reply This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+                      p.comment__reply__content__date Thứ 7, 26/12/2015 12: 00 AM
+              hr
+
+              .row.comment__content
+                +comment_infor('../images/comment.png', 'Nguyễn Văn Chiến', 'This is Photoshops version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.')
+              hr
+              
+              //- Write Comment
+              .comment__name.row
+                p Viết bình luận :
+              .comment__input.row
+                input.textbox.comment__input__name(type='textbox' placeholder='Họ và tên: ')
+                input.textbox.comment__input__email(type='textbox' placeholder='Email: ')
+                input.textbox(type='textbox' placeholder='Phone: ')
+              .comment__write.row
+                input.textbox.comment__write__content(type='textbox' placeholder='Bình luận: ')
+              .comment__button.row
+                .comment__button__send Gửi
+              
+      include ../pug/footer

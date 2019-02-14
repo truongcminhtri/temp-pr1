@@ -1,0 +1,59 @@
+.blog_tag1 {
+  a.name {
+    padding: 7px 13px;
+    &:hover {
+      background: $color-green;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+.blog_tag2 {
+  a.name {
+    padding: 7px 8px;
+    &:hover {
+      background: $color-green;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+.blog_tag3 {
+  a.name{
+    padding: 7px 22px;
+    &:hover {
+      background: $color-green;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+.blog_tag4 {
+  a.name {
+    padding: 7px 24px;
+    &:hover {
+      background: $color-green;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+.blog_tag1, .blog_tag2, .blog_tag3, .blog_tag4 {
+  margin-top: 30px;
+  a {
+    color: $color-gray;
+  }
+  a.name {
+    margin-right: 13px;
+    border: 1px solid $color-gray;
+    color: $color-gray;
+  }
+}

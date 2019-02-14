@@ -1,0 +1,81 @@
+doctype html
+html
+	include ../pug/head
+	link(rel='stylesheet', type='text/css', href='../maincss/list.css')
+		
+	body
+		.container-fluid
+			//- Header
+			include ../pug/header
+			include ../pug/pug_mixin/list/list_gallery
+			include ../pug/pug_mixin/list/list_item
+			include ../pug/pug_mixin/pagination
+
+			include ../pug/pug_mixin/link_page
+			+link_page('Danh sách sản phẩm')
+
+			//- Content
+			#content.row
+				.container
+					.section.row
+						//- Content left
+						.section_catogary.col-md-3
+							+list_gallery()
+
+							.section_color_title.row
+								.section_title_all
+									h5 
+										span Tìm theo màu
+									hr
+							.section_color_item.row
+								.col-md-5.color_left
+									i.fas.fa-circle.circle_green Xanh cây
+									i.fas.fa-circle.circle_purple Tím
+									i.fas.fa-circle.circle_yellow Vàng
+								.col-md-6.color_right
+									i.fas.fa-circle.circle_red Đỏ cam
+									i.fas.fa-circle.circle_blue Xanh trời
+									i.fas.fa-circle.circle_pink Hồng
+						//- Content right
+						.gallery.col-md-9
+							.gallery_img.row
+								img(src='../images/bngrid.png')
+
+							.gallery_select.row
+								.gallery_select_left.col-md-6
+									i.fas.fa-th
+									i.fas.fa-th-list
+								.gallery_select_right.col-md-6
+									a Sắp xếp theo
+									.dropdown
+										button.dropbtn Tên sản phẩm
+											i.fas.fa-caret-down
+										.dropdown-content
+											a(href='#') Tên sản phẩm
+											a(href='#') Giá tiền
+											a(href='#') Đánh giá
+									a Show
+									.show
+										button.dropbtn 15
+											i.fas.fa-caret-down
+										.dropdown-content
+											a(href='#') 14
+											a(href='#') 13
+											a(href='#') 12
+
+							.gallery_section.row
+								+list_item('../images/sp15.png')
+							.gallery_section.row
+								+list_item('../images/sp1.png')
+							.gallery_section.row
+								+list_item('../images/sp2.png')
+							.gallery_section.row
+								+list_item('../images/sp5.png')
+							.gallery_section.row
+								+list_item('../images/sp12.png')
+
+							+pagination()
+			//- //Content
+
+			//- Footer
+			include ../pug/footer

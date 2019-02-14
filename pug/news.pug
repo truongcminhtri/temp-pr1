@@ -1,0 +1,59 @@
+doctype html
+html
+	include ../pug/head
+	link(rel='stylesheet', type='text/css', href='../maincss/news.css')
+		
+	body
+		.container-fluid
+			//- Header
+			include ../pug/header
+			//- //Header
+				
+			//- Content
+			include ../pug/pug_mixin/news_comment/product_images
+			include ../pug/pug_mixin/category
+			include ../pug/pug_mixin/news_comment/news_gallery
+			include ../pug/pug_mixin/news_comment/blogs_tag
+			include ../pug/pug_mixin/pagination
+			include ../pug/pug_mixin/title
+			include ../pug/pug_mixin/link_page
+
+			+link_page('Tin tức')
+
+			#content.content.row
+				.container
+					.row
+						//- Content left
+						.col-md-3.content__left
+							.content__left__title.row
+								+title('Danh mục sản phẩm')
+								
+							+category()
+
+							.content__left__title.row
+								+title('Tin tức nổi bật')
+
+							.content__left__product.row
+								+product_images('../images/new1.png', '../html/comment.html', 'Hướng dẫn lựa chọn và bố trí cây xanh trong phòng khách')
+								+product_images('../images/new2.png', '../html/comment.html', 'Những sai lầm nên tránh khi bố trí cây xanh trong nhà')
+								+product_images('../images/new3.png', '../html/comment.html', '7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng')
+								+product_images('../images/new4.png', '../html/comment.html', 'Hướng dẫn lựa chọn cây cảnh trang trí trong văn phòng')
+								+product_images('../images/new5.png', '../html/comment.html', '4 loại cây cảnh thích hợp bày trí ở khu vực đại sảnh')
+
+							.content__left__title.row
+								+title('Blog tag')
+
+							+blogs_tag('../html/comment.html')
+
+						.col-md-9.content__right
+							+news_gallery('Cách bố trí hoa chậu trước cửa ấn tượng ngay lần đầu tiên', '../images/new6.png', 'Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa nhà luôn được đầu tư và trang trí khá bắt mắt. Cũng có thể nói đây là bộ mặt của ngôi nhà, là ấn tượng đầu tiên khi một vị khách ghé chơi nhà bạn đấy. Hãy cùng Sài Gòn Hoa tham khảo một vài cách bố trí chậu cây hoa cảnh ngay trước cửa nhà sao cho ấn tượng nhất nhé!')
+							
+							+news_gallery('Hướng dẫn lựa chọn và bố trí cây xanh trong phòng khách', '../images/new7.png', 'Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa nhà luôn được đầu tư và trang trí khá bắt mắt. Cũng có thể nói đây là bộ mặt của ngôi nhà, là ấn tượng đầu tiên khi một vị khách ghé chơi nhà bạn đấy. Hãy cùng Sài Gòn Hoa tham khảo một vài cách bố trí chậu cây hoa cảnh ngay trước cửa nhà sao cho ấn tượng nhất nhé!')
+
+							+news_gallery('7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng', '../images/new8.png', 'Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa nhà luôn được đầu tư và trang trí khá bắt mắt. Cũng có thể nói đây là bộ mặt của ngôi nhà, là ấn tượng đầu tiên khi một vị khách ghé chơi nhà bạn đấy. Hãy cùng Sài Gòn Hoa tham khảo một vài cách bố trí chậu cây hoa cảnh ngay trước cửa nhà sao cho ấn tượng nhất nhé!')
+
+							.gallery_pagination.row
+								+pagination()
+
+
+			include ../pug/footer

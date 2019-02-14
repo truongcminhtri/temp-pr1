@@ -1,0 +1,28 @@
+doctype html
+html
+	include ../pug/head
+	link(rel='stylesheet', type='text/css', href='../maincss/register.css')
+	
+	body
+		.container-fluid
+			.row
+				.container
+					.main.row
+						.img.col-md-4
+							img(src='../images/register.png')
+							img.shadow_img(src='../images/shadow.png')
+						.content.col-md-6
+							.name.row
+								img(src='../images/regis.png')
+							.email.row
+								p Đăng ký email ngay hôm nay
+							.textbox_row.row
+								input.textbox(type='text' placeholder='Nhập email của bạn vào đây')
+								i.fab.fa-telegram-plane
+							.content_row.row
+								p Đăng ký email ngay hôm nay để nhận các thông tin về sự kiện và các trương chình giảm giá từ chúng tôi
+							.checkbox_row.row
+								label.container
+									p Không hiển thị thông báo này nữa
+									input.checkbox(type='checkbox')
+									span.checkmark

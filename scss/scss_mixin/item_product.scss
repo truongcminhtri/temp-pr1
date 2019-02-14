@@ -1,0 +1,21 @@
+img {
+	width: 100%;
+}
+.section_item_all {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	width: 100%;
+	i {
+		color: $color-star;
+		padding-bottom: 15px;
+	}
+	a.mainprice {
+		color: $color-red;
+		padding-right: 10px;
+	}
+	a.secondprice {
+		text-decoration: line-through;
+		color: $color-gray;
+	}
+}

@@ -1,0 +1,16 @@
+.link-page {
+	&__container {
+		padding-left: 3%;
+		&__name {
+			margin-top: 20px;
+			font-size: $font-size;
+			span {
+				color: $color-green;
+				&::before {
+					content: "/\00a0";
+					padding-left: 3px;
+				}
+			}
+		}
+	}
+}

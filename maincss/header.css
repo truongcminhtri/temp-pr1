@@ -1,0 +1,140 @@
+.header_top {
+  background: #202020;
+  height: 32px;
+}
+.header_top .header_top_content {
+  height: 100%;
+  color: #898989;
+}
+.header_top .header_navbar_left {
+  display: flex;
+}
+.header_top .header_icon_time {
+  height: 100%;
+}
+.header_top .header_icon_time a {
+  font-size: 13px;
+}
+.header_top .header_icon {
+  height: 100%;
+}
+.header_top .header_icon a {
+  font-size: 13px;
+}
+.header_top .header_icon a i {
+  font-size: 13px;
+}
+.header_top .header_icon a i:hover {
+  color: #3fb871;
+  cursor: pointer;
+}
+.header_top .col-md-4 i {
+  width: 36px;
+  text-align: center;
+}
+.header_top .col-md-4 span {
+  color: #898989;
+}
+.header_top .header_navbar_right a {
+  margin-right: 5%;
+  margin-left: 5%;
+  color: #aaaaaa;
+}
+.header_top .header_navbar_right a i {
+  font-size: 13px;
+}
+.header_top .header_navbar_right a:hover {
+  color: #3fb871;
+}
+
+.header {
+  background: url("../images/hdt.png");
+}
+.header .header_logo_name {
+  padding-top: 4%;
+}
+.header .header_logo_img {
+  padding: 0px;
+}
+.header .header_contact p.header_help {
+  margin-top: 30px;
+  text-align: center;
+  color: #898989;
+}
+.header .header_contact p.search {
+  color: #898989;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+.header .header_contact p.search a {
+  float: right;
+}
+.header .header_contact p.search a i {
+  border-left: 1px solid #aaaaaa;
+}
+.header .header_contact p.search a i::before {
+  padding-left: 15px;
+}
+.header .header_card {
+  margin-top: 7%;
+  padding: 0;
+}
+.header .header_card a {
+  color: #898989;
+}
+.header .header_card a:hover {
+  color: #3fb871;
+  text-decoration: none;
+}
+.header .header_card i::before {
+  padding-right: 5px;
+}
+
+.menu {
+  background: #3fb871;
+  text-transform: uppercase;
+}
+.menu a {
+  color: #ffffff;
+}
+.menu .navbar {
+  width: 100%;
+}
+.menu .navbar-nav {
+  padding-left: 15px;
+}
+.menu .navbar-nav li {
+  padding: 5px;
+}
+.menu .navbar-nav li a {
+  padding: 14px 20px;
+}
+.menu .navbar-nav li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.menu .navbar-nav ul.dropdown-menu li:hover {
+  color: #3fb871;
+  background: #3fb871;
+}
+.menu .navbar-nav ul.dropdown-menu li a {
+  color: #3fb871;
+  text-decoration: none;
+  padding: 14px 19px;
+}
+.menu .navbar-nav ul.dropdown-menu li a:hover {
+  color: white;
+  background: none;
+}
+.menu .icon_menu {
+  width: 35px;
+}
+.menu .icon_menu .menu_icon {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+/*# sourceMappingURL=header.css.map */

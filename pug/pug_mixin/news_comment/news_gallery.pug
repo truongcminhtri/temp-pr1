@@ -1,0 +1,15 @@
+mixin news_gallery(name, href, content)
+	.section_gallery_title.row
+		.section_gallery_name
+			p= name
+		.section_gallery_time
+			p
+				i.far.fa-calendar-minus 20/12/2015
+				i.far.fa-clock 11:20:00 AM
+				i.far.fa-comment-dots 0 Bình luận
+
+	.section_gallery_img.row
+		img(src= href)
+
+	.section_gallery_content.row
+		p= content

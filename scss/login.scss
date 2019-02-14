@@ -1,0 +1,156 @@
+@import "../variable/color";
+@import "../scss/header";
+@import "../scss/footer";
+@import "../scss/scss_mixin/link_page";
+
+.content {
+	padding-left: 30px;
+	margin-top: 30px;
+	.title-all {
+		p {
+			font-size: 18px;
+			text-transform: uppercase;
+			color: $color-green;
+			font-weight: bold;
+			padding-bottom: 50px;
+		}
+	}
+	&__left {
+		padding-right: 45px;
+		&__email {
+			margin-bottom: 45px;
+		}
+		.textbox--modified {
+			width: 100%;
+			padding: 9px;
+		}
+
+		&__password {
+			margin-bottom: 63px;
+		}
+
+		&__remember {
+			height: 20px;
+			&__check {
+				padding: 0;
+				p {
+					color: black;
+				}
+				.label {
+					float: right;
+				}
+				input.checkbox {
+					float: right;
+				}
+				p {
+					font-size: 14px;
+					color: black;
+				}
+				.label {
+					display: block;
+					position: relative;
+					padding-left: 17px;
+					cursor: pointer;
+					-webkit-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+					input {
+						width: 0;
+					}
+				}
+				.checkmark {
+					position: absolute;
+					top: 4px;
+					left: 0;
+					height: 13px;
+					width: 13px;
+					background-color: white;
+					border: 1px solid #7d7d7d;
+				}
+				.label input:checked ~ .checkmark {
+					background-color: green;
+				}
+
+				.checkmark:after {
+					content: "";
+					position: absolute;
+					display: none;
+				}
+				.label {
+					input:checked ~ .checkmark:after {
+					display: block;
+					}
+					.checkmark:after {
+						left: 3px;
+						top: -1px;
+						width: 6px;
+						height: 12px;
+						border: solid white;
+						border-width: 0 3px 3px 0;
+						-webkit-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+					}
+				}
+			}
+			&__forgot {
+				p {
+					color: $color-gray;
+					text-decoration: underline;
+					font-style: italic;
+				}
+			}
+		}
+
+		&__button {
+			margin-top: 45px;
+			margin-bottom: 110px;
+			&__payment {
+				position: relative;
+				&__text {
+					border-radius: 50px;
+					padding: 10px 33px;
+					color: $color-green;
+					border: 1px solid $color-green;
+					&:hover {
+						background: $color-green;
+						color: white;
+						border: 1px solid $color-green;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	&__right {
+		.title-all {
+			p {
+				padding-bottom: 23px;
+			}
+			a {
+				font-size: 15px;
+				color: $color-gray;
+			}
+		}
+		&__button {
+			margin-top: 35px;
+			&__payment {
+				position: relative;
+				&__text {
+					border-radius: 50px;
+					padding: 10px 33px;
+					color: $color-green;
+					border: 1px solid $color-green;
+					&:hover {
+						background: $color-green;
+						color: white;
+						border: 1px solid $color-green;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
